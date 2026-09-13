@@ -78,3 +78,11 @@ $pcb-layout-design
 - [设计规范导航](references/pcb-layout-design-guidelines.md)：统一原则和专题加载入口。
 - `references/*.md`：布局机械、叠层电源、信号接口、制造规则、走线几何和评审清单。
 - [K230D 案例](references/k230d-case-study.md)：案例观察和学习记录；其中参数不能直接作为其他 PCB 的规则。
+
+## Layout 示例
+
+![image.png](./Docs/20260913233223.png)
+
+## 注意 !!!
+
+将 SKill 安装或放到 .codex 目录下使用的时候将本 README.md 和 Docs/ 删除，因为 README 的存在会导致 codex 不识别 SKill。
