@@ -19,7 +19,7 @@
 | 多层板、参考面、电源、去耦和载流 | [叠层、回流与电源](stackup-return-power.md) | 规划层用途、换层、功率/参考铜或电源区域时 |
 | 模拟、晶振、高速、差分、ESD、RF | [信号、接口与敏感电路](signal-and-interface.md) | 涉及对应网络组时只读相关章节 |
 | 布线通道、转角、工整度和层间耦合 | [走线几何与层间耦合](routing-geometry-and-coupling.md) | 布线前规划、每组整理或耦合评审时 |
-| 板厂工艺、线宽/过孔、KiCad 规则和铜区操作 | [制造、装配与 KiCad](manufacturing-and-kicad.md) | 设计开始前检查规则；改规则、线宽、过孔、铜区或制造输出时 |
+| 板厂工艺、线宽/过孔、EDA 规则和铜区操作 | [制造、装配与 EDA 规则](manufacturing-and-kicad.md) | 设计开始前检查规则；改规则、线宽、过孔、铜区或制造输出时；KiCad 专节按软件加载 |
 | 阶段评审、关键网络复核和交付 | [评审与交付清单](review-checklists.md) | 每组关键网络完成/受影响后，以及最终交付前 |
 | K230D 实例 | [K230D 案例](k230d-case-study.md) | 只用于学习或处理该工程；案例数值不套用于其他板 |
 
@@ -44,5 +44,4 @@
 
 外部资料转成规则时记录：`来源与适用对象 | 项目适用原因 | 执行动作 | 检查方法 | 例外/状态`。资料链接失效不应使本地规则失去基本执行含义。
 
-通用标准用途可从 [IPC 设计标准目录](https://www.ipc.org/ipc-design-standards)检索；EDA 行为以当前版本 [KiCad PCB Editor 文档](https://docs.kicad.org/10.0/en/pcbnew/pcbnew.html)为准。正式设计前重新确认适用版本。
-
+通用标准用途可从 [IPC 设计标准目录](https://www.ipc.org/ipc-design-standards)检索；EDA 的规则优先级、对象语义、编辑接口、填铜和检查行为以目标软件当前版本的官方文档为准。使用 KiCad 时可从 [KiCad PCB Editor 文档](https://docs.kicad.org/10.0/en/pcbnew/pcbnew.html)核对；正式设计前重新确认软件与文件版本。

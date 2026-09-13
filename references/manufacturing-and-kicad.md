@@ -1,6 +1,6 @@
-# 制造、装配与 KiCad 规则
+# 制造、装配与 EDA 规则
 
-用于绑定板厂/装配工艺、检查已有规则、选择线宽/过孔和处理铜区。先读取 [统一原则与导航](pcb-layout-design-guidelines.md)。电气用途的判断分别见 [叠层、回流与电源](stackup-return-power.md)和[信号、接口与敏感电路](signal-and-interface.md)。
+用于绑定板厂/装配工艺、检查已有规则、选择线宽/过孔和处理铜区，适用于 KiCad、Altium Designer、Cadence Allegro、EasyEDA 等 PCB EDA。先读取 [统一原则与导航](pcb-layout-design-guidelines.md)。电气用途的判断分别见 [叠层、回流与电源](stackup-return-power.md)和[信号、接口与敏感电路](signal-and-interface.md)。界面名称因软件和版本而异，应把本文概念映射到目标 EDA 的网络类、约束管理器、规则域、铜区及等价对象，并用原生检查确认实际生效。
 
 ## 1. 制造输入
 
@@ -35,6 +35,8 @@
 
 ## 4. KiCad 约束层次和网络类
 
+本节只在目标工程使用 KiCad 时加载；其他 EDA 按其官方规则优先级和作用域机制落实第 3 节基线，不照搬 KiCad 的字段名称或优先关系。
+
 KiCad 10 全局 Constraints 的最小值不能被更具体规则降低；网络类中的线宽/过孔通常是默认布线值，不自动构成最大/最小 DRC 限制。需要强制检查的范围用适用的自定义规则表达，并检查多个规则叠加后的实际结果。[KiCad PCB Editor：设计规则](https://docs.kicad.org/10.0/en/pcbnew/pcbnew.html)
 
 按项目输入建立一般信号、电源、差分、接口和敏感网络类；逐层阻抗、长度/偏斜、天线/机械/隔离区域和局部例外按需设规则。网络前缀只可作命名线索，不能把同前缀的电源、控制和高速线误分为同一类。
@@ -53,7 +55,7 @@ KiCad 10 全局 Constraints 的最小值不能被更具体规则降低；网络�
 
 创建或修改铜区前明确网络、层、用途、供回路径和禁布范围，区分轮廓与实际填充。功率、参考/回流、屏蔽和散热用途分别按 [叠层、回流与电源](stackup-return-power.md#6-功率铜与信号参考铜的取舍)检查。
 
-| KiCad 参数 | 检查 |
+| 常见铜区参数 | 检查 |
 |---|---|
 | Network / Layer | 网络归属和所在层 |
 | Clearance | 与网络类/局部规则共同作用后的有效间距 |

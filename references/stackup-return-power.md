@@ -1,6 +1,6 @@
 # 叠层、回流与电源
 
-用于多层板分层、参考面、铺铜用途、电源环路和载流设计。先读取 [统一原则与导航](pcb-layout-design-guidelines.md)；铜区工具参数见 [制造与 KiCad](manufacturing-and-kicad.md#5-铜区参数与处理流程)。
+用于多层板分层、参考面、铺铜用途、电源环路和载流设计。先读取 [统一原则与导航](pcb-layout-design-guidelines.md)；铜区工具参数见 [制造、装配与 EDA 规则](manufacturing-and-kicad.md#5-铜区参数与处理流程)。
 
 ## 1. 物理叠层与层用途
 
