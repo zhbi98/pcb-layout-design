@@ -34,7 +34,7 @@
 - [差分、换层和局部结构](signal-and-interface.md#5-差分换层和局部结构)
 - [长度与时序](signal-and-interface.md#6-长度与时序)
 - [已有规则检查](manufacturing-and-kicad.md#3-设计开始前检查已有规则)
-- [结合网络和通道选择线宽](manufacturing-and-kicad.md#41-结合网络和通道选择线宽)
+- [结合网络和通道选择线宽](manufacturing-and-kicad.md#31-结合网络和通道选择线宽)
 - [铜区处理流程](manufacturing-and-kicad.md#5-铜区参数与处理流程)
 - [关键网络检查](review-checklists.md#2-关键网络完成或修改后的检查)
 

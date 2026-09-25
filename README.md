@@ -2,30 +2,28 @@
 
 用于原理图设计和封装分配完成后的 PCB 布局、走线、铺铜、设计评审与投板准备。入口是 [SKILL.md](SKILL.md)，Agent 会根据任务按需读取 `references/` 中的专题规则。
 
-## 在当前工程中使用
+## 从 PCB 工程中使用
 
-当前工程结构为：
+Skill 目录结构示例，实际存放位置不限：
 
 ```text
-HardWare_Example/
-├─ *.kicad_pro / *.kicad_sch / *.kicad_pcb
-└─ pcb-layout-design/
-   ├─ SKILL.md
-   └─ references/
+pcb-layout-design/
+├─ SKILL.md
+└─ references/
 ```
 
-这种放置方式不需要先安装 Skill。使用步骤如下：
+使用绝对路径指定 Skill 时不需要先安装。使用步骤如下：
 
-1. 在 `HardWare_Example` 工程根目录打开 Codex，使 Agent 能同时访问 KiCad 工程和 `pcb-layout-design`。
-2. 在指令中明确要求读取 `pcb-layout-design/SKILL.md`。Agent 将根据任务选择需要的专题文档，无需手工列出全部 `references`。
+1. 在要设计的 PCB 工程根目录打开 Codex，确认 Agent 可以读取实际存放 Skill 的目录。
+2. 在指令中写明实际 `SKILL.md` 的路径。Agent 将根据任务选择需要的专题文档，无需手工列出全部 `references`。
 3. 第一次接手工程时，建议先做只读检查，确认根工程、PCB 版本、已有设计规则、板框、固定结构件、叠层和缺失输入。
 4. 检查结果明确后，再要求执行布局、走线、整理或投板准备，并说明允许修改的范围。
 5. 完成后查看 Agent 报告的修改文件、原生 DRC/未连接检查、未验证项和阻断问题。
 
-第一次检查可以直接发送：
+以下指令中的 `<SKILL.md 的实际路径>` 是占位符，使用时替换为自己的 Skill 路径。第一次检查可以发送：
 
 ```text
-请读取并遵循 pcb-layout-design/SKILL.md，按需读取它引用的参考文档。
+请读取并遵循 <SKILL.md 的实际路径>，按需读取它引用的参考文档。
 
 检查当前 KiCad 工程是否具备开始 PCB 布局的条件；列出已有约束、缺失输入和需要处理的问题，本次只审查，不修改工程。
 ```
@@ -33,7 +31,7 @@ HardWare_Example/
 需要实际修改时，推荐按照下面的结构说明任务：
 
 ```text
-请读取并遵循 pcb-layout-design/SKILL.md，按需读取它引用的参考文档。
+请读取并遵循 xxx/pcb-layout-design/SKILL.md，按需读取它引用的参考文档。
 
 目标：<完成布局 / 继续走线 / 整理指定区域 / 局部优化 / 投板准备>
 范围：<全板，或明确的器件、网络、功能模块和区域>
@@ -62,6 +60,8 @@ HardWare_Example/
 
 - 默认个人目录：`%USERPROFILE%\.codex\skills\pcb-layout-design`
 - 设置了 `CODEX_HOME` 时：`%CODEX_HOME%\skills\pcb-layout-design`
+
+![image.png](./Docs/20260925153949.png)
 
 安装后可在 Codex 中选择 `pcb-layout-design`，或调用：
 
