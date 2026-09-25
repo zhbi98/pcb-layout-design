@@ -17,7 +17,7 @@
 | 接手工程、板框、结构件、模块化布局 | [布局与机械约束](layout-and-mechanics.md) | 新布局、移动器件、机械/装配变化或布局评审时 |
 | 器件间距、方向、双面布局和视图整理 | [布局与机械约束：装配间距](layout-and-mechanics.md#4-装配维修间距与方向) | 摆件、局部优化或装配可行性检查时 |
 | 多层板、参考面、电源、去耦和载流 | [叠层、回流与电源](stackup-return-power.md) | 规划层用途、换层、功率/参考铜或电源区域时 |
-| 模拟、晶振、高速、差分、ESD、RF | [信号、接口与敏感电路](signal-and-interface.md) | 涉及对应网络组时只读相关章节 |
+| 模拟、晶振、高速、差分、CAN/RS-485、ESD、RF | [信号、接口与敏感电路](signal-and-interface.md) | 涉及对应网络组时只读相关章节 |
 | 布线通道、转角、工整度和层间耦合 | [走线几何与层间耦合](routing-geometry-and-coupling.md) | 布线前规划、每组整理或耦合评审时 |
 | 板厂工艺、线宽/过孔、EDA 规则、DFT、标识和可靠性 | [制造、装配与 EDA 规则](manufacturing-and-kicad.md) | 设计开始前检查规则；改规则、线宽、过孔、铜区或制造输出时；规划测试/烧录、特殊孔、基准点、阻焊钢网、环境或 EMC 边界时；KiCad 专节按软件加载 |
 | 阶段评审、关键网络复核和交付 | [评审与交付清单](review-checklists.md) | 每组关键网络完成/受影响后，以及最终交付前 |
@@ -33,6 +33,7 @@
 - [电源完整性、铜宽与过孔](stackup-return-power.md#5-电源完整性铜宽与过孔)
 - [差分、换层和局部结构](signal-and-interface.md#5-差分换层和局部结构)
 - [长度与时序](signal-and-interface.md#6-长度与时序)
+- [CAN 与 RS-485 总线](signal-and-interface.md#9-can-与-rs-485-总线)
 - [已有规则检查](manufacturing-and-kicad.md#3-设计开始前检查已有规则)
 - [结合网络和通道选择线宽](manufacturing-and-kicad.md#31-结合网络和通道选择线宽)
 - [铜区处理流程](manufacturing-and-kicad.md#5-铜区参数与处理流程)

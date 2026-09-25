@@ -10,6 +10,17 @@ Skill 目录结构示例，实际存放位置不限：
 pcb-layout-design/
 ├─ SKILL.md
 └─ references/
+   ├─ pcb-layout-design-guidelines.md
+   ├─ layout-and-mechanics.md
+   ├─ stackup-return-power.md
+   ├─ signal-and-interface.md
+   ├─ routing-geometry-and-coupling.md
+   ├─ manufacturing-and-kicad.md
+   ├─ review-checklists.md
+   ├─ k230d-case-study.md
+   └─ k230d/
+      ├─ layout_inventory.json
+      └─ layer_overview.png
 ```
 
 使用绝对路径指定 Skill 时不需要先安装。使用步骤如下：
@@ -31,7 +42,7 @@ pcb-layout-design/
 需要实际修改时，推荐按照下面的结构说明任务：
 
 ```text
-请读取并遵循 xxx/pcb-layout-design/SKILL.md，按需读取它引用的参考文档。
+请读取并遵循 <SKILL.md 的实际路径>，按需读取它引用的参考文档。
 
 目标：<完成布局 / 继续走线 / 整理指定区域 / 局部优化 / 投板准备>
 范围：<全板，或明确的器件、网络、功能模块和区域>
@@ -60,8 +71,6 @@ pcb-layout-design/
 
 - 默认个人目录：`%USERPROFILE%\.codex\skills\pcb-layout-design`
 - 设置了 `CODEX_HOME` 时：`%CODEX_HOME%\skills\pcb-layout-design`
-
-![image.png](./Docs/20260925153949.png)
 
 安装后可在 Codex 中选择 `pcb-layout-design`，或调用：
 
