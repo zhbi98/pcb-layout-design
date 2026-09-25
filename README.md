@@ -72,6 +72,8 @@ pcb-layout-design/
 - 默认个人目录：`%USERPROFILE%\.codex\skills\pcb-layout-design`
 - 设置了 `CODEX_HOME` 时：`%CODEX_HOME%\skills\pcb-layout-design`
 
+![image.png](./Docs/20260925153949.png)
+
 安装后可在 Codex 中选择 `pcb-layout-design`，或调用：
 
 ```text
